@@ -2,6 +2,20 @@
 
 /**
   * Created by ganeshchand on 2/10/16.
+  *
+  * To run this on your local machine, you need to first run a Netcat server
+  *    `$ nc -lk 2222`
+  * and then run the example
+  *    `$ bin/spark-submit --class FizzBuzzStream /path-to/fizzbuzz-1.0-SNAPSHOT.jar`
+  *
+  * For input, in the terminal where netcat server is running, enter numbers separated by space ending with \n
+  *    e.g
+  *    1 1 1 1 3 3 3 10 15
+  *
+  *
+  * The program terminates after 5 sec.
+  *
+  *
   */
 
 import org.apache.spark.SparkConf

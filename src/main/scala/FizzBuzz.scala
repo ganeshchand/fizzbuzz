@@ -2,6 +2,10 @@ import org.apache.spark.{SparkConf, SparkContext}
 
 /**
   * Created by ganeshchand on 2/10/16.
+  *
+  * To run this on your local machine
+  *   `$ bin/spark-submit --class FizzBuzz /path-to/fizzbuzz-1.0-SNAPSHOT.jar`
+  *
   */
 object FizzBuzz {
   def main(args: Array[String]) {

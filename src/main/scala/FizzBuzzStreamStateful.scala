@@ -2,6 +2,19 @@ import org.apache.spark.streaming._
 
 /**
   * Created by ganeshchand on 2/10/16.
+  *
+  *   * To run this on your local machine, you need to first run a Netcat server
+  *    `$ nc -lk 2222`
+  * and then run the example
+  *    `$ bin/spark-submit --class FizzBuzzStreamStateful /path-to/fizzbuzz-1.0-SNAPSHOT.jar`
+  *
+  *    For input, in the terminal where netcat server is running, enter numbers separated by space ending with \n
+  *    e.g
+  *    1 1 1 1 3 3 3
+  *    3
+  *    5
+  *    15
+  *    3 5 10 15
   */
 
 import org.apache.spark.streaming.{Seconds, StreamingContext}
